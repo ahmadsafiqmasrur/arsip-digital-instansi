@@ -1,0 +1,235 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head><meta charset='utf-8'><title>Tabel Pengujian Blackbox</title>
+<style>
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid black; padding: 8px; text-align: left; vertical-align: top; }
+    th { background-color: #f2f2f2; }
+    h2 { font-family: Arial, sans-serif; margin-top: 20px; }
+    body { font-family: 'Times New Roman', serif; }
+</style>
+</head>
+<body>
+    <h1 style='text-align: center;'>Tabel Pengujian Blackbox Testing</h1>
+    <h1 style='text-align: center;'>Sistem Arsip Pernikahan</h1>
+
+    <h2>1. Fitur Autentikasi (Login & Logout)</h2>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Pengujian</th>
+            <th>Langkah Pengujian</th>
+            <th>Data Uji</th>
+            <th>Hasil Yang Diharapkan</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Login dengan data valid</td>
+            <td>1. Masukkan username valid<br>2. Masukkan password valid<br>3. Klik tombol Login</td>
+            <td>Username: admin<br>Password: admin123</td>
+            <td>Sistem berhasil login dan diarahkan ke Dashboard</td>
+            <td>Berhasil</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Login dengan password salah</td>
+            <td>1. Masukkan username valid<br>2. Masukkan password salah<br>3. Klik tombol Login</td>
+            <td>Username: admin<br>Password: salah123</td>
+            <td>Sistem menolak akses dan menampilkan pesan error password salah</td>
+            <td>Berhasil</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Login dengan username tidak terdaftar</td>
+            <td>1. Masukkan username tidak valid<br>2. Masukkan password sembarang<br>3. Klik tombol Login</td>
+            <td>Username: unknown<br>Password: 12345</td>
+            <td>Sistem menolak akses dan menampilkan pesan username tidak ditemukan</td>
+            <td>Berhasil</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Logout dari sistem</td>
+            <td>1. Klik tombol Logout pada menu navigasi</td>
+            <td>-</td>
+            <td>Sesi berakhir dan sistem mengarahkan kembali ke halaman Login</td>
+            <td>Berhasil</td>
+        </tr>
+    </table>
+
+    <h2>2. Fitur Kelola Data Arsip Utama</h2>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Pengujian</th>
+            <th>Langkah Pengujian</th>
+            <th>Data Uji</th>
+            <th>Hasil Yang Diharapkan</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Menampilkan data arsip</td>
+            <td>1. Klik menu Data Arsip</td>
+            <td>-</td>
+            <td>Sistem menampilkan daftar data arsip dalam bentuk tabel</td>
+            <td>Berhasil</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Filter data per kelurahan</td>
+            <td>1. Pilih kelurahan pada dropdown filter<br>2. Klik tombol Filter</td>
+            <td>Kelurahan: Canden</td>
+            <td>Sistem hanya menampilkan data arsip dari Kelurahan Canden</td>
+            <td>Berhasil</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Mencari data arsip</td>
+            <td>1. Masukkan kata kunci pada kolom pencarian<br>2. Klik tombol Cari</td>
+            <td>Nama: Budi</td>
+            <td>Sistem menampilkan data arsip yang mengandung nama "Budi"</td>
+            <td>Berhasil</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Tambah data arsip baru</td>
+            <td>1. Klik tombol Tambah Data<br>2. Isi semua form (Data Suami, Istri, dll)<br>3. Upload foto suami & istri<br>4. Klik Simpan</td>
+            <td>Data Lengkap & File Gambar (.jpg)</td>
+            <td>Data berhasil disimpan ke database dan foto berhasil terupload</td>
+            <td>Berhasil</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Tambah data tanpa upload foto</td>
+            <td>1. Isi form data arsip<br>2. Kosongkan upload foto<br>3. Klik Simpan</td>
+            <td>Data Lengkap tanpa foto</td>
+            <td>Sistem memberikan peringatan bahwa foto wajib diunggah</td>
+            <td>Berhasil</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Edit data arsip</td>
+            <td>1. Klik tombol Edit pada salah satu data<br>2. Ubah beberapa informasi<br>3. Klik Update</td>
+            <td>Perubahan Nama Suami</td>
+            <td>Data pada database diperbarui sesuai dengan perubahan yang dilakukan</td>
+            <td>Berhasil</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Hapus data arsip</td>
+            <td>1. Klik tombol Hapus pada salah satu data<br>2. Klik Konfirmasi Hapus</td>
+            <td>ID Arsip terpilih</td>
+            <td>Data terhapus dari database dan file foto terkait di folder uploads juga terhapus</td>
+            <td>Berhasil</td>
+        </tr>
+    </table>
+
+    <h2>3. Fitur Kelola Arsip Scan (PDF)</h2>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Pengujian</th>
+            <th>Langkah Pengujian</th>
+            <th>Data Uji</th>
+            <th>Hasil Yang Diharapkan</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Menambah data scan baru</td>
+            <td>1. Klik menu Arsip Scan<br>2. Klik Tambah Scan<br>3. Isi form dan upload file PDF<br>4. Klik Simpan</td>
+            <td>File: dokumen.pdf</td>
+            <td>Data berhasil disimpan dan file PDF tersimpan di server</td>
+            <td>Berhasil</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Upload multiple file PDF</td>
+            <td>1. Klik Tambah Scan<br>2. Pilih lebih dari satu file PDF pada input file<br>3. Klik Simpan</td>
+            <td>3 File PDF sekaligus</td>
+            <td>Semua file PDF berhasil diunggah dan tercatat pada satu entri data</td>
+            <td>Berhasil</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Mengubah data scan</td>
+            <td>1. Klik tombol Edit pada data scan<br>2. Tambah/Hapus file PDF<br>3. Klik Update</td>
+            <td>Penambahan file PDF baru</td>
+            <td>Daftar file PDF pada data tersebut berhasil diperbarui</td>
+            <td>Berhasil</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Menghapus data scan</td>
+            <td>1. Klik tombol Hapus pada data scan<br>2. Klik Konfirmasi</td>
+            <td>ID Scan terpilih</td>
+            <td>Data terhapus dan seluruh file PDF terkait di server juga terhapus</td>
+            <td>Berhasil</td>
+        </tr>
+    </table>
+
+    <h2>4. Fitur Cetak Dokumen (PDF Export)</h2>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Pengujian</th>
+            <th>Langkah Pengujian</th>
+            <th>Data Uji</th>
+            <th>Hasil Yang Diharapkan</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Mencari data untuk dicetak</td>
+            <td>1. Klik menu Cetak Arsip<br>2. Masukkan nomor arsip/nama<br>3. Klik Cari</td>
+            <td>No Arsip: CDN1</td>
+            <td>Sistem menampilkan data yang sesuai untuk siap dicetak</td>
+            <td>Berhasil</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Menghasilkan output PDF</td>
+            <td>1. Klik tombol Cetak pada data terpilih</td>
+            <td>ID Arsip: 1</td>
+            <td>Sistem menghasilkan file PDF dengan layout yang rapi</td>
+            <td>Berhasil</td>
+        </tr>
+    </table>
+
+    <h2>5. Fitur Manajemen Pengguna (Admin Only)</h2>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Pengujian</th>
+            <th>Langkah Pengujian</th>
+            <th>Data Uji</th>
+            <th>Hasil Yang Diharapkan</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Menambah pengguna baru</td>
+            <td>1. Klik menu Pengguna<br>2. Klik Tambah Pengguna<br>3. Isi form data pengguna<br>4. Klik Simpan</td>
+            <td>Username: petugas1</td>
+            <td>Pengguna baru berhasil ditambahkan</td>
+            <td>Berhasil</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mengubah data pengguna</td>
+            <td>1. Klik tombol Edit pada pengguna<br>2. Ubah password/nama<br>3. Klik Update</td>
+            <td>Password baru</td>
+            <td>Data pengguna diperbarui</td>
+            <td>Berhasil</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Menghapus pengguna</td>
+            <td>1. Klik tombol Hapus<br>2. Klik Konfirmasi</td>
+            <td>ID Pengguna terpilih</td>
+            <td>Pengguna terhapus dari sistem</td>
+            <td>Berhasil</td>
+        </tr>
+    </table>
+</body>
+</html>

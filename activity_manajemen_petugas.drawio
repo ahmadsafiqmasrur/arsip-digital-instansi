@@ -1,0 +1,78 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="activity-manajemen-petugas" name="Activity Diagram Manajemen Petugas">
+    <mxGraphModel dx="1683" dy="1009" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="swimlane_container" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="820" width="600" x="80" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_koor" parent="swimlane_container" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" value="Koordinator" vertex="1">
+          <mxGeometry height="820" width="300" as="geometry" />
+        </mxCell>
+        <mxCell id="start_node" parent="lane_koor" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="135" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mulai_text" parent="lane_koor" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="Mulai" vertex="1">
+          <mxGeometry height="30" width="50" x="125" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="access_menu" parent="lane_koor" style="rounded=0;whiteSpace=wrap;html=1;" value="Akses Menu&#xa;Manajemen Petugas" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="manage_action" parent="lane_koor" style="rounded=0;whiteSpace=wrap;html=1;" value="Tambah / Edit /&#xa;Hapus Petugas" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="confirm_action" parent="lane_koor" style="rounded=0;whiteSpace=wrap;html=1;" value="Konfirmasi &amp;&#xa;Simpan Perubahan" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" edge="1" parent="lane_koor" source="start_node" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#ff0000;" target="access_menu" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" edge="1" parent="lane_koor" source="manage_action" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="confirm_action" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_sistem" parent="swimlane_container" style="swimlane;whiteSpace=wrap;html=1;startSize=40;" value="Sistem" vertex="1">
+          <mxGeometry height="820" width="300" x="300" as="geometry" />
+        </mxCell>
+        <mxCell id="show_list" parent="lane_sistem" style="rounded=0;whiteSpace=wrap;html=1;" value="Menampilkan&#xa;Daftar Petugas" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="validate_update" parent="lane_sistem" style="rounded=0;whiteSpace=wrap;html=1;" value="Validasi Data &amp;&#xa;Update Database" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="refresh_list" parent="lane_sistem" style="rounded=0;whiteSpace=wrap;html=1;" value="Refresh Tampilan&#xa;Data Terbaru" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="end_node" parent="lane_sistem" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="135" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="selesai_text" parent="lane_sistem" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" value="Selesai" vertex="1">
+          <mxGeometry height="30" width="60" x="120" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="edge6" edge="1" parent="lane_sistem" source="validate_update" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="refresh_list" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge7" edge="1" parent="lane_sistem" source="refresh_list" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="end_node" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" edge="1" parent="swimlane_container" source="access_menu" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="show_list" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" edge="1" parent="swimlane_container" source="show_list" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="manage_action" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="240" />
+              <mxPoint x="150" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" edge="1" parent="swimlane_container" source="confirm_action" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="validate_update" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hlvr6pEdGuLY7VG9sEtu-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Activity Manajemen Petugas" vertex="1">
+          <mxGeometry height="30" width="190" x="60" y="10" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

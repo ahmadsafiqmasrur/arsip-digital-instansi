@@ -1,0 +1,24 @@
+# --- Mengabaikan Library Pihak Ketiga ---
+vendor/
+
+# --- Mengabaikan File Log & Cache ---
+application/logs/*
+!application/logs/index.html
+application/cache/*
+!application/cache/index.html
+
+# --- Mengabaikan File Upload User (Foto, Dokumen, PDF) ---
+uploads/*
+!uploads/index.html
+
+# --- Mengabaikan Database Dump & Dokumen PDF yang Berisi Data Warga ---
+db_arsip_pernikahan.sql
+data_arsip_pernikahan.pdf
+
+# --- Mengabaikan File Konfigurasi IDE / Editor ---
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

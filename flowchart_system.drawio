@@ -1,0 +1,173 @@
+<mxfile host="app.diagrams.net" agent="Antigravity AI">
+  <diagram id="arsip-flowchart-v3" name="Flowchart Sistem Arsip Detail">
+    <mxGraphModel dx="1717" dy="937" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nRQ-7Atn3X4JcuyhuVsp-2" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;entryX=0.458;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="nRQ-7Atn3X4JcuyhuVsp-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="start" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fontStyle=1;labelBackgroundColor=none;" value="Login" vertex="1">
+          <mxGeometry height="60" width="140" x="350" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="val_petugas" parent="1" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Validasi&lt;div&gt;Username &amp;amp; Password&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="180" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="val_koor" parent="1" style="rhombus;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Validasi&lt;div&gt;Username &amp;amp; Password&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="520" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="dash_petugas" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;labelBackgroundColor=none;" value="Dashboard Petugas" vertex="1">
+          <mxGeometry height="60" width="140" x="180" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="dash_koor" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;labelBackgroundColor=none;" value="Dashboard Koordinator" vertex="1">
+          <mxGeometry height="60" width="140" x="520" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="kelola_arsip" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Kelola Arsip&#xa;Pernikahan" vertex="1">
+          <mxGeometry height="60" width="130" x="100" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="arsip_scan" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Arsip Scan PDF" vertex="1">
+          <mxGeometry height="60" width="130" x="250" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="cetak_pdf" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;labelBackgroundColor=none;" value="Cetak Dokumen PDF" vertex="1">
+          <mxGeometry height="70" width="130" x="414" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="mgmt_petugas" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="Manajemen Petugas" vertex="1">
+          <mxGeometry height="60" width="130" x="550" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="ops_arsip" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;" value="Tambah, Lihat,&#xa;Edit &amp; Hapus Data" vertex="1">
+          <mxGeometry height="60" width="160" x="85" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="ops_scan" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;" value="Upload Multi-PDF,&#xa;Edit &amp; Hapus Scan" vertex="1">
+          <mxGeometry height="60" width="160" x="235" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="ops_mgmt" parent="1" style="shape=parallelogram;perimeter=perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;" value="Tambah/Edit/Hapus Akun&#xa;&amp; Lihat Riwayat Input" vertex="1">
+          <mxGeometry height="60" width="180" x="525" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="logout" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;labelBackgroundColor=none;" value="Logout" vertex="1">
+          <mxGeometry height="50" width="140" x="355" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="val_fail_petugas" edge="1" parent="1" source="val_petugas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="nRQ-7Atn3X4JcuyhuVsp-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint value="Gagal" as="offset" />
+            <Array as="points">
+              <mxPoint x="140" y="400" />
+              <mxPoint x="140" y="180" />
+            </Array>
+            <mxPoint x="365" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nRQ-7Atn3X4JcuyhuVsp-8" connectable="0" parent="val_fail_petugas" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" value="Tidak" vertex="1">
+          <mxGeometry relative="1" x="-0.9175" as="geometry">
+            <mxPoint x="-20" y="-80" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="val_fail_koor" edge="1" parent="1" source="val_koor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="nRQ-7Atn3X4JcuyhuVsp-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint value="Gagal" as="offset" />
+            <Array as="points">
+              <mxPoint x="700" y="400" />
+              <mxPoint x="700" y="180" />
+            </Array>
+            <mxPoint x="485" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nRQ-7Atn3X4JcuyhuVsp-7" connectable="0" parent="val_fail_koor" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" value="Tidak" vertex="1">
+          <mxGeometry relative="1" x="-0.9253" as="geometry">
+            <mxPoint x="23" y="-80" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="val_success_petugas" edge="1" parent="1" source="val_petugas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="dash_petugas">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint value="Berhasil" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nRQ-7Atn3X4JcuyhuVsp-6" connectable="0" parent="val_success_petugas" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" value="Ya" vertex="1">
+          <mxGeometry relative="1" x="-0.2143" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="val_success_koor" edge="1" parent="1" source="val_koor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="dash_koor">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint value="Berhasil" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nRQ-7Atn3X4JcuyhuVsp-5" connectable="0" parent="val_success_koor" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" value="Ya" vertex="1">
+          <mxGeometry relative="1" x="-0.2196" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pet_to_kelola" edge="1" parent="1" source="dash_petugas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="kelola_arsip">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pet_to_scan" edge="1" parent="1" source="dash_petugas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="arsip_scan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pet_to_cetak" edge="1" parent="1" source="dash_petugas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="cetak_pdf">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="koor_to_kelola" edge="1" parent="1" source="dash_koor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="kelola_arsip">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="koor_to_scan" edge="1" parent="1" source="dash_koor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="arsip_scan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="koor_to_cetak" edge="1" parent="1" source="dash_koor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="cetak_pdf">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="koor_to_mgmt" edge="1" parent="1" source="dash_koor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.681;exitY=1.037;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;labelBackgroundColor=none;fontColor=default;" target="mgmt_petugas">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ops_arsip" edge="1" parent="1" source="kelola_arsip" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="ops_arsip">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ops_scan" edge="1" parent="1" source="arsip_scan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="ops_scan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_ops_mgmt" edge="1" parent="1" source="mgmt_petugas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0.015;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=none;fontColor=default;" target="ops_mgmt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pet_logout" edge="1" parent="1" source="dash_petugas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="logout">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint value="Logout" as="offset" />
+            <Array as="points">
+              <mxPoint x="40" y="510" />
+              <mxPoint x="40" y="835" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="koor_logout" edge="1" parent="1" source="dash_koor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="logout">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint value="Logout" as="offset" />
+            <Array as="points">
+              <mxPoint x="790" y="510" />
+              <mxPoint x="790" y="835" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nRQ-7Atn3X4JcuyhuVsp-3" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="val_petugas">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="425" y="280" />
+              <mxPoint x="250" y="280" />
+            </Array>
+            <mxPoint x="425.0526315789473" y="210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nRQ-7Atn3X4JcuyhuVsp-4" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="val_koor">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="425" y="280" />
+              <mxPoint x="590" y="280" />
+            </Array>
+            <mxPoint x="425.0526315789473" y="210" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nRQ-7Atn3X4JcuyhuVsp-9" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Input login&lt;div&gt;sesuai peran&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="365" y="150" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
